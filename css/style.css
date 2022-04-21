@@ -1,0 +1,914 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #f3290e;
+    --secondary-color: #fff;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f4f4f4;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #000;
+    width: 100%;
+} 
+
+/* NavBar and First-Look Styling */
+/* Navbar */
+aside{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/BW\ blue\ overlaz.png);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    color: var(--secondary-color);
+    padding: 30px;
+    text-align: center;
+}
+nav ul{
+    text-align: center;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 12px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #292929;
+}
+nav ul li a:hover{
+    color: var(--secondary-color);
+    font-weight: 800;
+}
+#logo{
+    padding: 30px;
+    color: var(--secondary-color);
+    margin-right: 30px;
+}
+/* Menu & Exit */
+#menu-button{
+    position: absolute;
+    margin-left: -175px;
+    margin-top: 30px;
+    display: none;
+}
+#exit-button{
+    position: absolute;
+    padding: 25px;
+    font-size: 1.5em;
+    margin-left: -200px;
+    display: none;
+}
+/* first-look */
+.first-look{
+    color: var(--secondary-color);
+}
+.fl-text{
+    margin-top: 250px;
+}
+.fl-text h1{
+    font-size: 3.5em;
+}
+.fl-text p{
+    font-size: 1.5em;
+    margin-top: -40px;
+}
+
+/* Profile Styling */
+.ma-profile{
+    width: 100%;
+    height: 600px;
+    
+}
+.profile-cont{
+    width: 70%;
+    height: inherit;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    display: flex;
+    margin: auto;
+    background: #292929;
+}
+.profile-img img{
+    width: 300px;
+    height: 400px;
+    margin-top: 95px;
+    margin-left: 10px;
+}
+.profile-img img:hover{
+    cursor: pointer;
+}
+.profile-img .watsup-pic{
+    display: none;
+}
+.profile-text{
+    width: 60%;
+    text-align: center;
+    padding: 20px;
+    color: var(--secondary-color);
+}
+.profile-text p{
+    text-align: left;
+    line-height: 1.7;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+/* Current Skills Styling */
+.skills{
+    width: 100%;
+    height: 600px;
+}
+.skills-wrapper{
+    width: 70%;
+    height: 600px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    background-image: url(../images/ricardo.png);
+    margin-top: -2px;
+    border: #f4f4f4 1px solid;
+}
+.skills-wrapper h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 1.8em;
+    color: #292929;
+}
+.ma-skills{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.ma-skills p{
+    color: var(--primary-color);
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.lng-pic{
+    margin: 0 auto 10px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.2s;
+}
+.lng-pic:hover{
+    transform: translateY(-15px);
+    cursor: pointer;
+}
+.html{
+    width: 150px;
+    height: 150px;
+}
+.html5-border{
+    border: 2px solid var(--primary-color);
+}
+.css{
+    width: 150px;
+    height: 150px;
+}
+.css-border{
+    border: 2px solid #2f90ff;
+}
+.css-p p{
+    color: #2f90ff;
+}
+.javascript{
+    width: 150px;
+    height: 150px;
+}
+.javascript-border{
+    border: 2px solid #b8b81c;
+}
+.javascript-p p{
+    color: #b8b81c;
+}
+.ms-text{
+    width: 60%;
+    margin: 5px auto 20px;
+    line-height: 1.5;
+    font-size: 1.2em;
+    text-align: center;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    color: #292929;
+}
+
+/* Footer Styling */
+footer{
+    width: 100%;
+    height: 350px;
+    background: #292929;
+}
+.ft-wrapper{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding: 50px;
+}
+/* Brand & Socials*/
+.ft-brand{
+    padding-right: 40px;
+    color: var(--secondary-color);
+}
+.ft-brand p{
+    margin-top: -10px;
+}
+.nav-socials{
+    padding: 5px;
+    margin-top: 100px;
+}
+.nav-socials i{
+    font-size: 1.5em;
+    padding: 5px;
+    color: var(--primary-color);
+}
+.nav-socials i:hover{
+    transform: rotate(360deg);
+    transition: .9s ease;
+}
+.nav-socials .face:hover{
+    color: #2f90ff;
+}
+.nav-socials .you:hover{
+    color: #c20404;
+}
+.nav-socials .insta:hover{
+    color: #ec16ec;
+}
+.nav-socials .twit:hover{
+    color: #2f90ff;
+}
+/* The Vertical Line */
+.line{
+    width: 1px;
+    height: 250px;
+    margin-right: 40px;
+    border: 3px solid var(--secondary-color);
+}
+/* Info & Email */
+.ft-info{
+    margin-top: 60px;
+    color: var(--secondary-color);
+}
+.ft-info p{
+    line-height: 1.5;
+}
+#email{
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+}
+::placeholder{
+    font-size: 1.4em;
+}
+#submit{
+    width: 100px;
+    padding: 9px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    transition: .3 ease-out;
+}
+#submit:hover{
+    background-color: #2f90ff;
+    cursor: pointer;
+}
+/* Nav Page Links*/
+.bottom-nav-pages{
+    margin-top:125px;
+    padding: 20px;
+}
+.bottom-nav-pages ul{
+    display: flex;
+}
+.bottom-nav-pages ul li{
+    padding: 20px;
+    list-style: none;
+}
+.bottom-nav-pages ul li a{
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}.bottom-nav-pages ul li a:hover{
+    color: #2f90ff;
+}
+
+.ft-bottom{
+    text-align: center;
+    color: var(--secondary-color);
+    background: #000;
+    padding: 5px;
+}
+
+
+
+
+@media screen and (max-width: 1440px) {
+    /* Navbar */
+nav{
+    color: var(--secondary-color);
+    padding: 30px;
+    text-align: center;
+}
+nav ul{
+    margin-left: -30px;
+}
+nav ul li a{
+    padding: 10px;
+    font-size: 1.35em;
+}
+#logo{
+    padding: 15px;
+    color: var(--secondary-color);
+    margin-right: 30px;
+}
+    /* Profile */
+    .profile-cont{
+        width: 80%;
+        height: inherit;
+        top: 0;
+        left: 0;
+        padding: 30px;
+        display: flex;
+        margin: auto;
+        background: #292929;
+    }
+    .profile-img img{
+        width: 300px;
+        height: 400px;
+        margin-top: 95px;
+        margin-left: 10px;
+    }
+    .profile-text{
+        width: 70%;
+        text-align: center;
+        padding: 20px;
+        color: var(--secondary-color);
+    }
+    .profile-text p{
+        text-align: left;
+        line-height: 1.7;
+        font-size: 1.2em;
+        font-weight: 100;
+    }
+
+    /* Current Skills Styling */
+.skills-wrapper{
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    background-image: url(../images/ricardo.png);
+    margin-top: -1px;
+    border: #f4f4f4 1px solid;
+}
+/* Footer Styling */
+footer{
+    width: 100%;
+    height: 350px;
+    background: #292929;
+}
+.ft-wrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 50px;
+}
+
+}
+
+@media screen and (max-width: 1024px) {
+    /* Navbar */
+nav{
+    color: var(--secondary-color);
+    padding: 15px;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #292929;
+}
+#logo{
+    padding: 15px;
+    color: var(--secondary-color);
+    margin-right: 30px;
+}
+    /* Profile */
+    .profile-cont{
+        width: 100%;
+        height: inherit;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        margin: auto;
+        background: #292929;
+    }
+    .profile-img img{
+        width: 230px;
+        height: 300px;
+        margin-top: 95px;
+    }
+
+    /* Current Skills Styling */
+.skills-wrapper{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    background-image: url(../images/ricardo.png);
+    margin-top: -1px;
+    border: #f4f4f4 1px solid;
+}
+/* Footer Styling */
+footer{
+    width: 100%;
+    height: 350px;
+    background: #292929;
+}
+.ft-wrapper{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 30px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    /* Navbar */
+nav{
+    color: var(--secondary-color);
+    padding: 15px;
+    text-align: center;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #292929;
+}
+#logo{
+    padding: 17px;
+    color: var(--secondary-color);
+    margin-right: 30px;
+    font-size: .8em;
+}
+/* first-look */
+.fl-text h1{
+    font-size: 2.5em;
+}
+.fl-text p{
+    font-size: 1.3em;
+    margin-top: -30px;
+}
+
+    /* Profile */
+    .profile-cont{
+        padding: 5px;
+    }
+    .profile-img img{
+        width: 230px;
+        height: 300px;
+        margin-top: 95px;
+    }
+    .profile-text{
+        margin-top: 20px;
+        padding: 5px;
+    }
+    .profile-text p{
+        text-align: left;
+        line-height: 1.4;
+        font-size: 1.1em;
+        font-weight: 100;
+    }
+
+    /* Current Skills Styling */
+.skills-wrapper{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    background-image: url(../images/ricardo.png);
+    margin-top: -1px;
+    border: #f4f4f4 1px solid;
+}
+.ms-text{
+    width: 100%;
+}
+/* Footer Styling */
+footer{
+    width: 100%;
+    height: 350px;
+    background: #292929;
+}
+.ft-wrapper{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding: 5px;
+}
+/* Info & Email */
+.ft-info{
+    margin-top: 20px;
+    color: var(--secondary-color);
+}
+.ft-info p{
+    line-height: 1.5;
+}
+#email{
+    width: 250px;
+    height: 40px;
+    padding: 0px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+}
+::placeholder{
+    font-size: 1.2em;
+}
+#submit{
+    width: 100px;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+#submit:hover{
+    background-color: #2f90ff;
+    transition: .9 ease-in;
+}
+/* Nav Page Links*/
+.bottom-nav-pages{
+    margin-top:125px;
+    padding: 20px;
+}
+.bottom-nav-pages ul{
+    display: flex;
+}
+.bottom-nav-pages ul li{
+    padding: 20px;
+    list-style: none;
+}
+.bottom-nav-pages ul li a{
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}.bottom-nav-pages ul li a:hover{
+    color: #2f90ff;
+}
+
+.ft-bottom{
+    text-align: center;
+    color: var(--secondary-color);
+    background: #000;
+    padding: 5px;
+}
+}
+
+@media screen and (max-width: 425px) {
+    /* Navbar */
+    aside{
+        height: 50vh;
+    }
+nav{
+    color: var(--secondary-color);
+    padding: 15px;
+    text-align: center;
+    margin-left: 65px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+nav ul li a:hover{
+    color: var(--primary-color);
+}
+header nav .current a{
+    color: var(--primary-color);
+    font-weight: 800;
+    border-bottom: var(--secondary-color) solid 3px;
+    padding-bottom: 1px;
+}
+#logo{
+    display: none;
+}
+/* first-look */
+.fl-text{
+    margin-top: 100px;
+}
+.fl-text h1{
+    font-size: 1.7em;
+}
+.fl-text p{
+    font-size: 1em;
+    margin-top: -15px;
+}
+
+    /* Profile */
+    .ma-profile{
+        height: 700px;
+        
+    }
+    .profile-cont{
+        padding: 0px;
+    }
+    .profile-img .black-pic{
+        display: none;
+    }
+    .profile-img .watsup-pic{
+        position: absolute;
+        display: flex;
+        width: 70px;
+        height: 70px;
+        margin-left: 180px;
+        margin-top: 40px;
+        border-radius: 50%;
+    }
+    .profile-text{
+        width: 100%;
+        margin-top: 100px;
+        padding: 5px;
+    }
+    .profile-text p{
+        text-align: center;
+    }
+
+    /* Current Skills Styling */
+.skills{
+    height: 725px;
+    }
+.skills-wrapper{
+    width: 100%;
+    height: 600px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    background-image: url(../images/ricardo.png);
+    margin-top: -1px;
+    border: #f4f4f4 1px solid;
+}
+.skills-wrapper h2{
+    font-size: 1.5em;
+}
+.ma-skills{
+    width: 80%;
+    justify-content: space-around;
+}
+.ma-skills p{
+    color: var(--primary-color);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.html{
+    width: 100px;
+    height: 100px;
+}
+.css{
+    width: 100px;
+    height: 100px;
+}
+.javascript{
+    width: 100px;
+    height: 100px;
+}
+.css-p p{
+    color: #2f90ff;
+}
+.javascript-p p{
+    color: rgb(184, 184, 28);
+}
+.ms-text{
+    width: 100%;
+}
+
+/* Footer Styling */
+footer{
+    width: 100%;
+    height: 460px;
+    background: #292929;
+}
+.ft-wrapper{
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 0px;
+    text-align: center;
+    margin-top: -100px;
+}
+.ft-brand{
+    text-align: left;
+    padding: 5px;
+}
+.ft-brand .nav-socials{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.line{
+    width: 80%;
+    height: 1px;
+    margin: 20px auto 0px;
+    border: .5px solid var(--secondary-color);
+}
+/* Info & Email */
+.ft-info{
+    width: 100%;
+    margin: 10px auto 0px;
+    padding: 3px;
+    color: var(--secondary-color);
+}
+.ft-info p{
+    line-height: 1.5;
+}
+#email{
+    width: 250px;
+    height: 40px;
+    padding: 0px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+}
+::placeholder{
+    font-size: 1.2em;
+}
+#submit{
+    width: 100px;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+#submit:hover{
+    background-color: #2f90ff;
+    transition: .9 ease-in;
+}
+/* Nav Page Links*/
+.bottom-nav-pages{
+    margin-top: 20px;
+    margin-left: 25px;
+    padding: 20px;
+}
+.bottom-nav-pages ul{
+    display: flex;
+}
+.bottom-nav-pages ul li{
+    padding: 20px;
+    list-style: none;
+}
+.bottom-nav-pages ul li a{
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}.bottom-nav-pages ul li a:hover{
+    color: #2f90ff;
+}
+
+.ft-bottom{
+    text-align: center;
+    color: var(--secondary-color);
+    background: #000;
+    padding: 5px;
+}
+}
+
+@media screen and (max-width: 375px) {
+    /* Nav*/
+    nav{
+        margin-left: 40px;
+    }
+    /* Profile */
+    .ma-profile{
+        height: 600px;
+    }
+    .profile-img .watsup-pic{
+        margin-left: 160px;
+    }
+    .profile-text h2{
+        font-size: 1.2em;
+    }
+    .profile-text p{
+        font-size: 1em;
+    }
+    /* footer */
+    .ft-brand h2{
+        font-size: 1em;
+    }
+    .ft-brand p{
+        font-size: .7em;
+    }
+    .nav-socials{
+        font-size: .8em;
+        font-weight: 100;
+    }
+    .bottom-nav-pages{
+        font-size: .8em;
+        font-weight: 100;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    #email{
+        height: 30px;
+    }
+    #submit{
+        display: block;
+        height: 30px;
+        margin: auto;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    /* Nav*/
+    nav{
+        margin-left: 10px;
+    }
+    /* Profile */
+    .ma-profile{
+        height: 700px;
+    }
+    .profile-img .watsup-pic{
+        margin-left: 130px;
+    }
+    .profile-text h2{
+        font-size: 1.2em;
+    }
+    .profile-text p{
+        font-size: 1em;
+    }
+    /* Skills */
+    .skills{
+        height: 800px;
+    }
+    /* footer */
+    .ft-brand h2{
+        font-size: 1em;
+    }
+    .ft-brand p{
+        font-size: .7em;
+    }
+    .nav-socials{
+        font-size: .8em;
+        font-weight: 100;
+    }
+    .bottom-nav-pages{
+        font-size: .8em;
+        font-weight: 100;
+        margin-left: -20px;
+        margin-top: 10px;
+    }
+    #email{
+        height: 30px;
+    }
+    #submit{
+        display: block;
+        height: 30px;
+        margin: auto;
+        margin-top: 10px;
+    }
+}

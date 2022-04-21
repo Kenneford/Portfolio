@@ -1,0 +1,9 @@
+span{
+    color: var(--primary-color);
+}
+header nav .current a{
+    color: var(--secondary-color);
+    font-weight: 800;
+    border-bottom: var(--primary-color) solid 3px;
+    padding-bottom: 1px;
+}
